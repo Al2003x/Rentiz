@@ -1,0 +1,11 @@
+// Начните писать стили здесь
+
+@import "vendor";
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "components/header";
+@import "components/footer";
