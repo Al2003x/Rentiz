@@ -1,7 +1,7 @@
 {
-  "name": "template-htmlacademy",
+  "name": "Rentiz",
   "private": true,
-  "description": "Сборка на основе сборки HTMLAcademy",
+  "description": "Проект Rentiz",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
