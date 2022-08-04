@@ -14,6 +14,7 @@ import svgstore from "gulp-svgstore";
 import del from "del";
 import browser from "browser-sync";
 import cheerio from "gulp-cheerio";
+import webp from "gulp-webp";
 
 // Styles
 
@@ -63,7 +64,8 @@ const scripts = () => {
 
 const optimizeImages = () => {
   return gulp
-    .src("src/img/**/*.{png,jpg}")
+    .src("src/img/**/*.{png,jpg, webp}")
+    // @ts-ignore
     .pipe(squoosh())
     .pipe(gulp.dest("build/img"));
 };
@@ -77,12 +79,8 @@ const copyImages = () => {
 const createWebp = () => {
   return gulp
     .src("src/img/**/*.{png,jpg}")
-    .pipe(
-      squoosh({
-        webp: {},
-        avif: {},
-      })
-    )
+    .pipe(webp())
+    .pipe(gulp.dest("src/img"))
     .pipe(gulp.dest("build/img"));
 };
 

@@ -8,6 +8,12 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: $bg-color;
+  color: $color-light;
+}
+
 img {
   height: auto;
   max-width: 100%;
@@ -16,6 +22,21 @@ img {
 
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -33,4 +54,33 @@ a {
   margin: 0 auto;
   padding: 0 $container-offset;
   max-width: $container-width;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 20px;
+  font-family: "Work Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #ffffff;
+  background-color: $accent-color;
+  border: 1px solid $accent-color;
+  transition: background-color 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &__transparent {
+    border: 1px solid $accent-color;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $accent-color;
+    }
+  }
 }

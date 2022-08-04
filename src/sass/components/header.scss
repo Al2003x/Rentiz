@@ -1,0 +1,48 @@
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(1.25rem, 0.886rem + 1.82vw, 2.5rem);
+}
+
+.header-logo {
+  max-width: 150px;
+
+  & svg {
+    max-width: 150px;
+  }
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.nav__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: $color-light;
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &-active::before {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: $accent-color;
+  }
+
+  &-active:hover {
+    color: $color-light;
+  }
+}

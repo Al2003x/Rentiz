@@ -19,6 +19,7 @@
     "gulp-svgmin": "^4.1.0",
     "gulp-svgstore": "8.0.0",
     "gulp-terser": "2.1.0",
+    "gulp-webp": "^4.0.1",
     "postcss": "8.4.4",
     "postcss-csso": "5.0.1",
     "postcss-scss": "^4.0.3",
